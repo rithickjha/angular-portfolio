@@ -1,0 +1,21 @@
+<div class="container">
+    <h2 class="text-center my-4">Contact Me</h2>
+    <p><strong>Phone:</strong> +91 8838464946</p>
+    <p><strong>Email:</strong> rithickjha&#64;gmail.com</p>
+    <form (submit)="onSubmit()">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" [(ngModel)]="contact.name" name="name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" [(ngModel)]="contact.email" name="email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea id="message" [(ngModel)]="contact.message" name="message" class="form-control" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  
